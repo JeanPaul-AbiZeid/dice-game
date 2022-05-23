@@ -26,8 +26,8 @@ if (random_number_1 === random_number_2){
     result.innerHTML = "Draw!";
 }
 else if (random_number_1 > random_number_2) {
-    result.innerHTML = "Play 1 wins!";
+    result.innerHTML = "&#128681 Player 1 Wins!";
 }
 else {
-    result.innerHTML = "Play 2 wins!";
+    result.innerHTML = "Player 2 Wins! &#128681";
 }
