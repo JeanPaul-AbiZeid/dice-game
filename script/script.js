@@ -9,6 +9,7 @@ var player2_image = image_source[random_number_2];
 
 var img1 = document.getElementsByClassName("img1")
 var img2 = document.getElementsByClassName("img2")
+var result = document.getElementById("text");
 
 function player1() {
     img1[0].src = player1_image;
@@ -20,3 +21,13 @@ function player2() {
 
 player1()
 player2()
+
+if (random_number_1 === random_number_2){
+    result.innerHTML = "Draw!";
+}
+else if (random_number_1 > random_number_2) {
+    result.innerHTML = "Play 1 wins!";
+}
+else {
+    result.innerHTML = "Play 2 wins!";
+}
